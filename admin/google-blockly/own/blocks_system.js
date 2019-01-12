@@ -775,7 +775,7 @@ Blockly.Blocks['math_rndfixed'] = {
             .appendField(new Blockly.FieldNumber(0, 1, 25), 'n')
             .appendField(Blockly.Words['math_rndfixed_decplcs'][systemLang]);
         this.setInputsInline(true);
-        this.setColour(Blockly.Blocks.math.HUE);
+        this.setColour(Blockly.Msg['MATH_HUE']);
         this.setOutput(true, 'Number');
         this.setTooltip(Blockly.Words['math_rndfixed_tooltip'][systemLang]);
   }
