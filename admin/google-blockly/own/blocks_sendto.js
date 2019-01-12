@@ -212,8 +212,10 @@ Blockly.Blocks['sendto_custom'] = {
      * @this Blockly.Block
      */
     updateShape_: function (names, withStatement) {
-        this.removeInput('LOG');
-        this.removeInput('WITH_STATEMENT');
+		if (this.getInput('LOG'))
+			this.removeInput('LOG');
+		if (this.getInput('WITH_STATEMENT'))
+			this.removeInput('WITH_STATEMENT');
         names = names || [];
         var _input;
         // Add new inputs.

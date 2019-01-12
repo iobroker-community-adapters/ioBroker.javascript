@@ -296,7 +296,7 @@ Blockly.Blocks['procedures_defcustomnoreturn'] = {
         }
 
         this.setInputsInline(true);
-        this.setColour(Blockly.Blocks.procedures.HUE);
+        this.setColour(Blockly.Msg['PROCEDURES_HUE']);
         this.setTooltip(Blockly.Msg.PROCEDURES_DEFRETURN_TOOLTIP);
         this.setHelpUrl(Blockly.Msg.PROCEDURES_DEFRETURN_HELPURL);
         this.arguments_ = [];

@@ -38,7 +38,7 @@ Blockly.Blocks['debug'] = {
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
         this.setInputsInline(false);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['debug_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('debug_help'));
     }
@@ -116,7 +116,7 @@ Blockly.Blocks['control'] = {
         this.setInputsInline(true);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['control_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('control_help'));
     },
@@ -222,7 +222,7 @@ Blockly.Blocks['toggle'] = {
         this.setInputsInline(true);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['toggle_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('toggle_help'));
     },
@@ -354,7 +354,7 @@ Blockly.Blocks['update'] = {
         this.setInputsInline(true);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['update_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('update_help'));
     },
@@ -461,7 +461,7 @@ Blockly.Blocks['direct'] = {
 
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['direct_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('direct_help'));
     }
@@ -529,7 +529,7 @@ Blockly.Blocks['control_ex'] = {
         this.setInputsInline(false);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['control_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('control_help'));
     }
@@ -568,7 +568,7 @@ Blockly.Blocks['create'] = {
         this.setNextStatement(true, null);
 
         this.setInputsInline(true);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['create_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('create_help'));
     }
@@ -612,7 +612,7 @@ Blockly.Blocks['get_value'] = {
 
         this.setInputsInline(true);
         this.setOutput(true);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['get_value_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('get_value_help'));
     }
@@ -662,7 +662,7 @@ Blockly.Blocks['get_value_async'] = {
         this.setNextStatement(true, null);
         
         this.setInputsInline(true);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['get_value_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('get_value_help'));
     }
@@ -693,7 +693,7 @@ Blockly.Blocks['field_oid'] = {
             .appendField(new Blockly.FieldOID('default'), 'oid');
 
         this.setInputsInline(true);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setOutput(true, 'String');
         this.setTooltip(Blockly.Words['field_oid_tooltip'][systemLang]);
     }
@@ -731,7 +731,7 @@ Blockly.Blocks['get_attr'] = {
 
         this.setInputsInline(true);
         this.setOutput(true);
-        this.setColour(Blockly.System.HUE);
+        this.setColour(Blockly.Msg['SYSTEM_HUE']);
         this.setTooltip(Blockly.Words['get_attr_tooltip'][systemLang]);
         this.setHelpUrl(getHelp('get_attr_help'));
     }
@@ -753,7 +753,7 @@ Blockly.Blocks['text_newline'] = {
         this.appendDummyInput()
             .appendField(new Blockly.FieldDropdown([['\\n', '\\n'], ['\\r\\n', '\\r\\n'], ['\\r', '\\r']]), 'Type');
         this.setInputsInline(true);
-        this.setColour(Blockly.Blocks.texts.HUE);
+        this.setColour(Blockly.Msg['TEXTS_HUE']);
         this.setOutput(true, 'String');
         this.setTooltip(Blockly.Words['text_newline_tooltip'][systemLang]);
     }
